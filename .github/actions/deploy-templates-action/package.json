@@ -1,0 +1,19 @@
+{
+  "name": "deploy-templates-action",
+  "version": "1.0.0",
+  "description": "This project represents a Github Action to deploy the built templates from Build Artifact",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "npm run build -- -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "typescript": "^5.4.2"
+  }
+}
