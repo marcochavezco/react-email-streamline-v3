@@ -1,0 +1,6 @@
+name: 'Log something'
+description: 'Provide a description here'
+
+runs:
+  using: node20
+  main: ./index.js

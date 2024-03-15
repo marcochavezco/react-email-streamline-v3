@@ -1,0 +1,17 @@
+name: Build and Deploy Templates
+run-name: ${{ github.actor }} deploy templates
+on: [push]
+
+jobs:
+  build_templates:
+    runs-on: ubuntu-latest
+    steps:
+      #  Checkout the code to be built
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 18
+      - name: Use custom action
+        uses: ./.github/actions/index.js
