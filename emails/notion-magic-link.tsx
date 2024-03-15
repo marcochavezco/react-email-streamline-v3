@@ -52,7 +52,7 @@ export const NotionMagicLinkEmail = ({
           }}
         >
           If you didn&apos;t try to login, you can safely ignore this email.
-          TEST
+          TEST TEST
         </Text>
         <Text
           style={{
