@@ -37,7 +37,7 @@ export const NotionMagicLinkEmail = ({
             marginBottom: '16px',
           }}
         >
-          Click here to log in with this magic link TEST
+          Click here to log in with this magic link TEST 2
         </Link>
         <Text style={{ ...text, marginBottom: '14px' }}>
           Or, copy and paste this temporary login code:
