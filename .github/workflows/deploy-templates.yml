@@ -1,5 +1,5 @@
 name: Build and Deploy Templates
-run-name: ${{ github.actor }} deploy templates
+run-name: ${{ github.actor }} deploing templates
 on: [push]
 
 jobs:
@@ -15,6 +15,7 @@ jobs:
           node-version: 20
 
       - run: npm install
+      # Runs "build": "email export --outDir ./public"
       - run: npm run build --if-present
 
       - name: Add & Commit Built files
@@ -47,5 +48,5 @@ jobs:
       - name: Test artifact Download
         run: ls -R
 
-      - name: Use custom action
+      - name: Use custom action to deploy templates
         uses: ./.github/actions/deploy-templates-action/
